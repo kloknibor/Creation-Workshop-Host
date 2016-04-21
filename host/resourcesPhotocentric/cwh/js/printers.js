@@ -4,7 +4,7 @@
 		controller = this;
 		var PRINTERS_DIRECTORY = "printers";
 		var BRANCH = "master";
-		var REPO = "WesGilster";
+		var REPO = "kloknibor";
 		
 		$scope.repo = REPO;
 		

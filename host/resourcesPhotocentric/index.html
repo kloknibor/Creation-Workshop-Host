@@ -121,7 +121,7 @@
         </button>
 
         <!-- CWH title goes here -->        
-        <a class="navbar-brand no-break-out" title="Photonic3D" href="./index.html">Photonic3D</a> 
+        <a class="navbar-brand no-break-out" title="Photocentric3D" href="./index.html">Photocentric3D</a> 
 
 
       </div>
@@ -148,15 +148,15 @@
             <a href="printersPage" ng-click="index.currentPage = 'printersPage'" class="fa fa-print" ng-show='visibleCards.indexOf("printers") > -1'>
               Printers
             </a>          
+          </li>		  
+          <li ng-class="{active:index.currentPage == 'printablesPage'}">
+            <a href="./printablesPage" ng-click="index.currentPage = 'printablesPage'" class="fa fa-files-o" ng-show='visibleCards.indexOf("printables") > -1'>
+              Printables
+            </a>          
           </li>
           <li ng-class="{active:index.currentPage == 'printJobsPage'}">
             <a href="./printJobsPage" ng-click="index.currentPage = 'printJobsPage'" class="fa fa-database" ng-show='visibleCards.indexOf("printJobs") > -1'>
               Print Jobs
-            </a>          
-          </li>
-          <li ng-class="{active:index.currentPage == 'printablesPage'}">
-            <a href="./printablesPage" ng-click="index.currentPage = 'printablesPage'" class="fa fa-files-o" ng-show='visibleCards.indexOf("printables") > -1'>
-              Printables
             </a>          
           </li>
           <li ng-class="{active:index.currentPage == 'usersPage'}">
@@ -237,13 +237,13 @@
 					<i class="fa fa-2x fa-print"></i>
 					Printers
 				</a>
-				<a href="./printJobsPage" class="btn btn-default" ng-click="index.currentPage = 'printJobsPage'" ng-class="{active:index.currentPage == 'printJobs'}" ng-show='visibleCards.indexOf("printJobs") > -1'>
-					<i class="fa fa-2x fa-database"></i>
-					PrintJobs
-				</a>
 				<a href="./printablesPage" class="btn btn-default" ng-click="index.currentPage = 'printablesPage'" ng-class="{active:index.currentPage == 'printables'}" ng-show='visibleCards.indexOf("printables") > -1'>
 					<i class="fa fa-2x fa-files-o"></i>
 					Printables
+				</a>
+				<a href="./printJobsPage" class="btn btn-default" ng-click="index.currentPage = 'printJobsPage'" ng-class="{active:index.currentPage == 'printJobs'}" ng-show='visibleCards.indexOf("printJobs") > -1'>
+					<i class="fa fa-2x fa-database"></i>
+					PrintJobs
 				</a>
 				<a href="./usersPage" class="btn btn-default" ng-click="index.currentPage = 'usersPage'" ng-class="{active:index.currentPage == 'users'}" ng-show='visibleCards.indexOf("users") > -1'>
 					<i class="fa fa-2x fa-users"></i>
